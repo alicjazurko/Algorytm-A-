@@ -186,6 +186,7 @@ def algorytmA(start=wierzcholki[0], meta=wierzcholki[-1]):
                 minf = f[i]
                 # print(minf)
 
+        # jeżeli obecny wierzchołek jest metą
         if x == meta:
             # wysyłanie funkcji rekonstrukcji trasy
             trasa = zrekonstruuj_trase(przyszedlZ, x)
@@ -198,7 +199,7 @@ def algorytmA(start=wierzcholki[0], meta=wierzcholki[-1]):
 
             # print("trasa:")
             print(trasaString)
-
+            break
         # print(rozpatrywane)
 
         rozpatrywane.remove(x)  # usuń x z rozpatrywane
